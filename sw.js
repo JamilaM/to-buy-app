@@ -4,7 +4,7 @@ const staticAssets = [
     './index.html', 
     './app.js',
     './style.css',
-    './manifest.css'
+    './manifest.json'
 ];
 
 
@@ -19,21 +19,24 @@ self.addEventListener('activate', event => {
 });
 
 
-self.addEventListener('fetch', event => {
-  const req = event.request;
-if (/.*(json)$/.test(req.url)) {
-    event.respondWith(networkFirst(req));
+self.addEventListener('fetch', async e => {
+  const req = e.request;
+  const url = new URL(req.url);
+
+  if (url.origin === location.origin) {
+    e.respondWith(networkAndCache(req));
   } else {
-    event.respondWith(cacheFirst(req));
+    e.respondWith(cacheFirst(req));
   }
 });
-
 
 async function cacheFirst(req) {
   const cache = await caches.open(cacheName);
   const cachedResponse = await cache.match(req);
   return cachedResponse || networkFirst(req);
 }
+
+
 async function networkFirst(req) {
   const cache = await caches.open(cacheName);
   try {

@@ -56,6 +56,10 @@ input[type=text]::placeholder{
     color: rgba(255,255,255,0.5);
 }
 
-
+@media screen and (max-width: 768px){
+    .container{
+        width: 80%;
+    }
+}
 
 
