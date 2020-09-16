@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<meta charset="utf-8">
+	<meta name="description" content="simple to-buy list app">
+	<meta name="author" content="Jamila Mustapha">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<title>To-buy List App</title>
+	
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+	
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	
+	<link rel="manifest" href="manifest.json">
+
+	<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+<section>
+  <div class ="container text-white text-center">
+  
+   <h1 class="my-5 text-center">To-buy List App</h1>
+   <form>
+       <input type="text" class="form-control form-control-lg my-4 shadow-sm searchToBuy" id="search" aria-describedby="searchItems" placeholder="Search to-buys">
+   </form>
+   
+   <ul class="list-group shadow-sm tobuy">
+      <li class="list-group-item d-flex justify-content-between">
+      <i class="fas fa-check"></i>
+      <span>I am a to-buy item</span>
+      <i class="far fa-trash-alt"></i>
+      </li>
+   </ul>
+   
+   <form class="my-4 text-center addtobuy">
+
+       <input type="text" class="form-control form-control-lg shadow-sm" id="add" aria-describedby="addTobuys" placeholder="Add a new to-buy">
+   </form>
+   
+     </div>
+    
+ 
+</section>
+	
+	<script src="app.js"></script>
+	
+</body>
+</html>

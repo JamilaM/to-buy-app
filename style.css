@@ -1,0 +1,61 @@
+
+body{
+    background-color: rgb(210,105,30);
+    margin: 0;
+}
+
+.container{
+    width: 50%;
+}
+
+
+form input{
+    background-color: aqua;
+}
+
+.fa-check{
+    border-right: 1px solid white;
+    padding: 8px; 
+    
+}
+
+.fa-trash-alt{
+    border-left: 1px solid white;
+    padding: 8px; 
+    
+}
+
+
+ul.tobuy{
+    list-style-type: none;
+    
+}
+
+ul li{
+    background-color: rgb(139,69,19)!important;
+}
+
+.check{
+    text-decoration: line-through;
+}
+
+.filtered{
+    display: none!important;
+    
+}
+
+input[type=text], input[type=text]:focus {
+    background-color: rgba(139,69,19, 0.3);
+    border: 1px solid rgb(139,69,19);
+    font-size: 1rem;
+    color: white;
+    
+}
+
+input[type=text]::placeholder{
+    color: rgba(255,255,255,0.5);
+}
+
+
+
+

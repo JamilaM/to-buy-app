@@ -1,0 +1,16 @@
+{
+  "name": "To-Buy App",
+  "short_name": "To-Buy",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#D2691E",
+  "description": "An app for listing stuff you need to buy next time you shop",
+  "theme_color": "#D2691E",
+  "icons": [
+    {
+      "src": "tobuy.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
